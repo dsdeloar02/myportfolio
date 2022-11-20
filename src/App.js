@@ -5,9 +5,10 @@ import { routes } from './routes/Router/Router';
 
 function App() {
   return (
-    <RouterProvider router={routes} >
-
-    </RouterProvider>
+    <div>
+        <RouterProvider router={routes} >
+        </RouterProvider>
+    </div>
   );
 }
 

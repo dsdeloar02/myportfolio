@@ -15,7 +15,7 @@ const Home = () => {
     console.log("🚀 ~ file: Home.js ~ line 14 ~ Home ~ details", details)
 
     return (
-        <div className=' bg-white dark:bg-slate-800'>
+        <div className=' bg-pink-200 dark:bg-slate-800'>
             <div className='flex flex-col justify-center items-center py-[5%]' >
                 <img className='h-[250px] w-[250px] rounded-full shadow-lg' src={details.image} alt="" />
                 <h1 className='text-2xl font-bold text-center py-2 dark:text-gray-100'>{details.name}</h1>

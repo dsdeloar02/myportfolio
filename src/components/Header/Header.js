@@ -26,7 +26,7 @@ const Header = () => {
 
 
   return (
-            <div className='shadow-md bg-white dark:bg-gray-800' >
+            <div className='shadow-md bg-pink-200 dark:bg-slate-800'  >
             <div className="container w-5/6 md:w-full mx-auto md:flex justify-between py-6">
                 <div className='flex items-center text-slate-600 w-[300px]'>
                     <h1 className='font-bold  md:text-xl lg:text-2xl dark:text-gray-100' >Developer</h1>
@@ -53,7 +53,7 @@ const Header = () => {
                         <NavLink to='/' >Home</NavLink>
                     </li>
                     <li className='mx-2 py-2 px-2 lg:px-4 dark:text-gray-100 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
-                        <NavLink to='/course' >About</NavLink>
+                        <NavLink to='/about' >About</NavLink>
                     </li>
                     <li className='mx-2 py-2 px-2 lg:px-4 dark:text-gray-100 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
                         <NavLink to='/course' >Resume</NavLink>
@@ -61,7 +61,7 @@ const Header = () => {
                     <li className='mx-2 py-2 px-2 lg:px-4 dark:text-gray-100 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
                         <NavLink to='/course' >Contact</NavLink>
                     </li>
-                    <li className='mx-2 py-2 px-1 lg:px-4 flex rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
+                    <li className='mx-2 py-2 px-1 lg:px-3 flex rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
                         <button className='w-full h-full dark:text-gray-100' onClick={() => handleBgChange(setChangeIcon(!changeIcon))} >
                         {
                             !changeIcon ? <CiDark className='text-black w-5 h-6' /> : <BsFillBrightnessHighFill className='text-white w-5 h-6' />
