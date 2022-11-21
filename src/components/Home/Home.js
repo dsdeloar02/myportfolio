@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { BsFacebook, BsTwitter, BsLinkedin, BsDownload } from "react-icons/bs";
 
+import profile from '../../assets/images/profile.png';
+
 const Home = () => {
 
     const [details, setDetails] = useState('');
@@ -11,13 +13,11 @@ const Home = () => {
         .then(data => setDetails(data[0]))
     }, [])
 
-    // const {name, image} = details;
-    console.log("🚀 ~ file: Home.js ~ line 14 ~ Home ~ details", details)
 
     return (
         <div className=' bg-pink-200 dark:bg-slate-800'>
             <div className='flex flex-col justify-center items-center py-[5%]' >
-                <img className='h-[250px] w-[250px] rounded-full shadow-lg' src={details.image} alt="" />
+                <img className='h-[250px] w-[250px] rounded-full shadow-lg' src={profile} alt="" />
                 <h1 className='text-2xl font-bold text-center py-2 dark:text-gray-100'>{details.name}</h1>
                 <p className='text-xl text-center py-2 dark:text-gray-100' >{details.profession}</p>
                 <ul className='flex mt-2'>
