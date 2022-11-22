@@ -25,7 +25,11 @@ const Home = () => {
                     <li className='mx-2 py-2 px-2 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700 text-white'><BsTwitter ></BsTwitter></li>
                     <li className='mx-2 py-2 px-2 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700 text-white'><BsLinkedin ></BsLinkedin></li>
                 </ul>
+                <a href="Front End Developer.pdf"
+                   download="Front End Developer.pdf"
+                >
                 <button className='flex justify-center items-center my-5 mx-2 py-2 px-4 rounded-md bg-gradient-to-r hover:from-green-400 hover:to-blue-500 from-pink-400 to-pink-700 text-white'> <BsDownload className='mr-2 flex' ></BsDownload> Download Cv</button>
+                </a>
             </div>
         </div>
     );
