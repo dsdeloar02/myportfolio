@@ -12,7 +12,7 @@ const Resume = () => {
                         <h1 className='text-4xl font-semibold mb-7' >What I do ..!</h1>
                     </div>
                     <div className='flex justify-between flex-wrap'>
-                        <div className='my-2 w-[32%] p-5 rounded-md border border-gray-400 flex '>
+                        <div className='my-2 w-full lg:w-[32%] p-5 rounded-md border border-gray-400 flex '>
                             <div>
                                 <img className='w-[140px]' src={responsive} alt="" />
                             </div>
@@ -21,7 +21,7 @@ const Resume = () => {
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit minima atque? </p>
                             </div>
                         </div>
-                        <div className='my-2 w-[32%] p-5 rounded-md border border-gray-400 flex '>
+                        <div className='my-2 w-full lg:w-[32%] p-5 rounded-md border border-gray-400 flex '>
                             <div>
                                 <img className='w-[80px]' src={webdevelop} alt="" />
                             </div>
@@ -30,7 +30,7 @@ const Resume = () => {
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit minima atque? </p>
                             </div>
                         </div>
-                        <div className='my-2 w-[32%] p-5 rounded-md border border-gray-400 flex '>
+                        <div className='my-2 w-full lg:w-[32%] p-5 rounded-md border border-gray-400 flex '>
                             <div>
                                 <img className='w-[80px]' src={applogo} alt="" />
                             </div>
@@ -47,8 +47,8 @@ const Resume = () => {
                     <div className='my-4' >
                         <h1 className='text-3xl font-bold my-7 text-center' >My Skills</h1>
                     </div>
-                    <div className='flex justify-between my-5'>
-                        <div className='w-[48%]'>
+                    <div className='flex flex-col md:flex-row justify-between my-5'>
+                        <div className='w-full md:w-[48%]'>
                             <div className='w-full'>
                                 <div className='my-3'>
                                     <div className="flex justify-between">
@@ -97,7 +97,7 @@ const Resume = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-[48%]'>
+                        <div className='w-full md:w-[48%]'>
                             <div className='w-full'>
                                 
                                 <div className='my-3'>

@@ -38,6 +38,13 @@ const Header = () => {
                             !background ? <CiDark className='text-black w-6 h-5' /> : <BsFillBrightnessHighFill className='text-white w-6 h-5' />
                        } 
                 </button> */}
+                <div className='md:hidden  py-2 px-2  absolute top-3 right-12 '>
+                        <button className='h-9 w-9 flex justify-center items-center dark:text-gray-100 rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700' onClick={() => handleBgChange(setChangeIcon(!changeIcon))} >
+                        {
+                            !changeIcon ? <CiDark className='text-black w-5 h-5' /> : <BsFillBrightnessHighFill className='text-white w-5 h-6' />
+                       }
+                        </button>
+                </div>
 
                 <div onClick={() =>setOpen(!open)} className="absolute right-4 top-6 cursor-pointer md:hidden" >
                     {
@@ -46,25 +53,25 @@ const Header = () => {
                 </div>
 
                 <ul
-                   className={`bg-orange-500 md:bg-transparent py-5 md:py-0 md:flex md:justify-end md:items-center absolute w-full left-0 md:static  transition-all duration-500 ease-in z-50 ${open ? 'top-20' : 'top-[-500px]'}  `} 
+                   className={`bg-orange-100 md:bg-transparent py-5 md:py-0 md:flex md:justify-end md:items-center absolute w-full left-0 md:static  transition-all duration-500 ease-in z-50 ${open ? 'top-20' : 'top-[-500px]'}  `} 
                  
                  >
-                    <li className='mx-2 py-2 px-2 lg:px-4 dark:text-gray-100 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
+                    <li className='mx-2 my-1 md:my-0 py-2 px-2 lg:px-4 dark:text-gray-100 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
                         <NavLink to='/' >Home</NavLink>
                     </li>
-                    <li className='mx-2 py-2 px-2 lg:px-4 dark:text-gray-100 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
+                    <li className='mx-2 my-1 md:my-0 py-2 px-2 lg:px-4 dark:text-gray-100 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
                         <NavLink to='/about' >About</NavLink>
                     </li>
-                    <li className='mx-2 py-2 px-2 lg:px-4 dark:text-gray-100 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
+                    <li className='mx-2 my-1 md:my-0 py-2 px-2 lg:px-4 dark:text-gray-100 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
                         <NavLink to='/resume' >Resume</NavLink>
                     </li>
-                    <li className='mx-2 py-2 px-2 lg:px-4 dark:text-gray-100 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
+                    <li className='mx-2 my-1 md:my-0 py-2 px-2 lg:px-4 dark:text-gray-100 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
                         <NavLink to='/portfolio' >Portfolio</NavLink>
                     </li>
-                    <li className='mx-2 py-2 px-2 lg:px-4 dark:text-gray-100 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
+                    <li className='mx-2 my-1 md:my-0 py-2 px-2 lg:px-4 dark:text-gray-100 rounded-md bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
                         <NavLink to='/contact' >Contact</NavLink>
                     </li>
-                    <li className='mx-2 py-2 px-1 lg:px-3 flex rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
+                    <li className='hidden mx-2 my-1 md:my-0 py-2 px-1 lg:px-3 md:flex rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-400 hover:to-pink-700'>
                         <button className='w-full h-full dark:text-gray-100' onClick={() => handleBgChange(setChangeIcon(!changeIcon))} >
                         {
                             !changeIcon ? <CiDark className='text-black w-5 h-6' /> : <BsFillBrightnessHighFill className='text-white w-5 h-6' />

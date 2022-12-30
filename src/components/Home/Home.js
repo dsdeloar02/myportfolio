@@ -15,8 +15,8 @@ const Home = () => {
 
 
     return (
-        <div className=' bg-pink-200 dark:bg-slate-800'>
-            <div className='flex flex-col justify-center items-center py-[5%]' >
+        <div className='h-screen bg-pink-200 dark:bg-slate-800'>
+            <div className='h-full flex flex-col justify-center items-center py-[5%]' >
                 <img className='h-[250px] w-[250px] rounded-full shadow-lg' src={profile} alt="" />
                 <h1 className='text-2xl font-bold text-center py-2 dark:text-gray-100'>{details.name}</h1>
                 <p className='text-xl text-center py-2 dark:text-gray-100' >{details.profession}</p>

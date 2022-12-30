@@ -11,10 +11,10 @@ const About = () => {
                     <h1 className='text-4xl font-bold mb-7' >About Me ..</h1>
                 </div>
                 <div className='grid grid-cols-3 gap-4 '>
-                    <div className="rounded-lg">
+                    <div className="col-span-3 lg:col-span-1 rounded-lg">
                         <img className="rounded-xl h-full object-cover" src={image} alt="" />
                     </div>
-                    <div class="col-span-2 px-3">
+                    <div class="col-span-3 lg:col-span-2 px-3">
                         <div className='mb-5'>
                             <h1 className='text-3xl font-semibold mb-4' >Who am i?</h1>
                             <p>Hi, I'm Deluar Hossain.I am a MERN-stack developer with 2+ years of experience with modern technologies like React, Next js, Tailwind CSS, Node js, Express js, Firebase, Mysql, MongoDB, and so on. I build responsive websites with my passion and full effort to improve user experience and your business.</p>
